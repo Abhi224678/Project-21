@@ -1,0 +1,76 @@
+{
+  "widgets": [
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Project 21 - EC2 Instance 1 CPU Utilization",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["AWS/EC2", "CPUUtilization", "InstanceId", "i-07d0c03dfc9a28017"]
+        ],
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 0,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Project 21 - EC2 Instance 2 CPU Utilization",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["AWS/EC2", "CPUUtilization", "InstanceId", "i-037a278fbb6f24c77"]
+        ],
+        "period": 300,
+        "stat": "Average"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 0,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Project 21 - Network In and Out",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["AWS/EC2", "NetworkIn", "InstanceId", "i-07d0c03dfc9a28017"],
+          ["AWS/EC2", "NetworkOut", "InstanceId", "i-07d0c03dfc9a28017"],
+          ["AWS/EC2", "NetworkIn", "InstanceId", "i-037a278fbb6f24c77"],
+          ["AWS/EC2", "NetworkOut", "InstanceId", "i-037a278fbb6f24c77"]
+        ],
+        "period": 300,
+        "stat": "Sum"
+      }
+    },
+    {
+      "type": "metric",
+      "x": 12,
+      "y": 6,
+      "width": 12,
+      "height": 6,
+      "properties": {
+        "title": "Project 21 - EC2 Status Checks",
+        "view": "timeSeries",
+        "region": "ap-south-1",
+        "metrics": [
+          ["AWS/EC2", "StatusCheckFailed", "InstanceId", "i-07d0c03dfc9a28017"],
+          ["AWS/EC2", "StatusCheckFailed", "InstanceId", "i-037a278fbb6f24c77"]
+        ],
+        "period": 300,
+        "stat": "Maximum"
+      }
+    }
+  ]
+}
